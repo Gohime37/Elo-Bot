@@ -1,29 +1,29 @@
 const axios = require("axios")
 module.exports = {
 	config: {
-		name: 'anya',
-        aliases: ["anya"],
+		name: 'lina',
+        aliases: ["loft"],
 		version: '1.2',
-		author: 'Luxion/fixed by Riley/edited by ᎶᎾᎻᎨᎷᎬ',
-		countDown: 5,
-		role: 2,
+		author: 'Luxion/fixed by Riley',
+		countDown: 0,
+		role: 0,
 		shortDescription: 'AI CHAT',
 		longDescription: {
-			en: 'Chat with ᎶᎾᎻᎨᎷᎬ'
+			en: 'Chat with Xae'
 		},
 		category: 'Ai chat',
 		guide: {
-			en: '   {pn} <word>: chat with ᎶᎾᎻᎨᎷᎬ'
-				+ '\Example:{pn} salut, ᎶᎾᎻᎨᎷᎬ'
+			en: '   {pn} <word>: chat with lina'
+				+ '\Example:{pn} hi'
 		}
 	},
 
 	langs: {
 		en: {
-			turnedOn: 'Compris boss😈',
-			turnedOff: 'Okay boss🤧',
-			chatting: 'Already Chatting with ᎶᎾᎻᎨᎷᎬ...',
-			error: 'Quoi🪂🙂'
+			turnedOn: '➪𝐓*𝐄𝐒 𝐒𝐑𝐗 𝐑𝐄𝐔𝐅 𝐓𝐔 𝐕𝐄𝐔𝐗 𝐐𝐔𝐄 𝐉𝐄 𝐋𝐄𝐒 𝐂𝐋𝐀𝐒𝐇𝐒...!',
+			turnedOff: 'Tu as tellement peur de moi que tu me met off fils de pute🖕!',
+			chatting: 'Already Chatting with 𝗟𝗢𝗙𝗧...',
+			error: 't*as appris à écrire ou..?🙂🤌'
 		}
 	},
 
@@ -72,4 +72,4 @@ async function getMessage(yourMessage, langCode) {
 		throw new Error(res.data.success);
 
 	return res.data.message;
-  }
+		}
